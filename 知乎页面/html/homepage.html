@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人主页</title>
+    <link rel="shortcut icon" href="../images/logo.ico"/>
+    <link rel="stylesheet" type="text/css" href="../css/homepage.css"/>
+    <link rel="stylesheet" type="text/css" href="../css/index.css">
+</head>
+<body>
+<div class="homepage">
+    <!-- 导航栏 -->
+    <div class="navigation">
+        <!-- logo -->
+        <a class="navigationlogo" href="index.html">
+            <img src="../images/导航栏logo.png">
+        </a>
+        <!-- 选择栏目 -->
+        <ul class="columnselector">
+            <li><a href="">首页</a></li>
+            <li><a href="">学习</a></li>
+            <li><a href="">会员</a></li>
+            <li><a href="">发现</a></li>
+            <li><a href="">来答</a></li>
+        </ul>
+        <!-- 搜索区域 -->
+        <div class="search">
+            <!-- 搜索框 -->
+            <div class="searchBox">
+                <!-- 搜索提问框输入文字 -->
+                <form class="searchText">
+                    <div class="mediumBox">
+                        <input class="inputQuestion" id="" type="text" name="searchQuestion" value="searchQuestion">
+                        <!-- 搜索按钮 -->
+                        <!-- <button class="submitQuestion" type="button"> -->
+                        <a href="">
+                            <img class="searchLogo" src="../images/搜索logo.png">
+                        </a>
+                        <!-- </button> -->
+                    </div>
+                </form>
+                <!-- 提问按钮 -->
+                <button class="haveQuestion" type="submit">提问</button>
+            </div>
+
+        </div>
+
+        <!-- 个人消息信息栏 -->
+        <div class="userInfo">
+            <!-- 消息 -->
+            <div class="news">
+                <div class="newsImg">
+                    <a href="">
+                        <img src="../images/消息.png">
+                    </a>
+                    <div class="newsXx">消息</div>
+                </div>
+            </div>
+
+            <!-- 私信 -->
+            <div class="message">
+                <div class="messageImg">
+                    <a href="">
+                        <img src="../images/信息.png">
+                    </a>
+                    <div class="messageXx">私信</div>
+                </div>
+            </div>
+
+            <!-- 头像 -->
+            <div class="photo">
+                <a href="">
+                    <img src="../images/头像.png">
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 上传照片信息 -->
+    <div class="header">
+        <!-- 个人名片 -->
+        <div class="personCard">
+            <!-- 上半部分灰色 -->
+            <div class="upPersonCard">
+                <!-- 上传照片 -->
+                <div class="bc">
+                    <img src="../images/个人主页背景.png" alt="">
+                </div>
+                <!-- <input type="file" class="photo" accept="image/png"/> -->
+
+                <!-- 上传照片按钮 -->
+
+            </div>
+
+            <!-- 下半部分 -->
+            <div class="downPersonCard">
+                <div class="personMain">
+                    <!-- 头像 -->
+                    <div class="personProfile">
+                        <img src="../images/我的头像.JPG">
+                    </div>
+
+                    <!-- 个人信息 编辑 中间框框-->
+                    <div class="personContent">
+                        <!-- 用户名 -->
+                        <div class="personName">
+                            <!-- <h1>李家玺</h1> -->
+                        </div>
+
+                        <!-- 编辑显示具体用户信息 -->
+
+                        <!-- <div> -->
+                        <!-- 查看详细资料 -->
+                        <!-- <button>
+
+                        </button> -->
+                        <!-- 编辑个人资料 -->
+                        <!-- <div class="editor">
+                            <button></button>
+                        </div>
+                </div> -->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 信息内容 -->
+    <div class="main">
+        <!-- 左边主内容 -->
+        <div class="mainLeft">
+            <!-- 选择栏目 主要是收藏栏目 -->
+            <div class="selector">
+                <ul>
+                    <li>
+                        <a href="">动态
+                            <!-- <span class="cnt">0</span> -->
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">回答
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">视频
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">提问
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">文章
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">专栏
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">想法
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="favorates">收藏
+                            <span class="cnt">2</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">关注
+                            <span class="cnt">0</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- 创建的收藏夹 -->
+            <div class="collectionHeader">
+                <!-- 左边 -->
+                <div class="minLeft">
+                    <!-- 创建的收藏夹 -->
+                    <a class="createFavor" href="">我创建的收藏夹</a>
+
+                    <!-- 关注的收藏夹 -->
+                    <a class="attentionFavor" href="">我关注的收藏夹</a>
+                </div>
+
+                <!-- 右边新建收藏夹按钮 -->
+                <div class="addFavorButton">
+                    <a href="">+ 新建收藏夹</a>
+                </div>
+            </div>
+
+            <!-- 收藏夹内容 -->
+            <div class="collectionContent">
+                <!-- 我的收藏 -->
+                <div class="myFavor">
+                    <div class="myFavorContain">
+                        <!-- 标题 -->
+                        <a href="" class="myFavorTitle">我的收藏</a>
+
+                        <!-- 下面的备注 -->
+                        <div class="myFavorAction">
+                            2021-11-07 更新 · 3 条内容 · 0 人关注
+                            <!-- 添加评论 -->
+                            <button class="addComment" type="button">
+                                    <!-- <span class="">
+                                        <img src="../images/信息.png">
+                                    </span> -->
+                                添加评论
+                            </button>
+                            <button class="edit" type="button">编辑</button>
+                            <button class="edit" type="button">删除</button>
+                            <!-- 编辑 -->
+                            <!-- 删除 -->
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 我的收藏夹 -->
+                <div class="myFavor">
+                    <div class="myFavorContain">
+                        <!-- 标题 -->
+                        <a href="" class="myFavorTitle">我的收藏夹</a>
+
+                        <!-- 下面的备注 -->
+                        <div class="myFavorAction">
+                            2019-02-01 更新 · 1 条内容 · 0 人关注
+                            <!-- 添加评论 -->
+                            <button class="addComment" type="button">
+                                    <!-- <span class="">
+                                        <img src="../images/信息.png">
+                                    </span> -->
+                                添加评论
+                            </button>
+                            
+                            <!-- 编辑 -->
+                            <button class="edit" type="button">编辑</button>
+
+                            <!-- 删除 -->
+                            <button class="edit" type="button">删除</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 右边主内容 -->
+        <div class="mainRight">
+            <!-- 右边装内容的盒子 -->
+            <div class="mainRightContain">
+                <!-- 创作中心 -->
+                <div class="creation">
+                    <!-- 创造头部 -->
+                    <div class="creationHead">
+                        <img class="CreatorEntrance-image" src="https://static.zhihu.com/heifetz/assets/creator_entrance.951b4aff.png">
+                        <div class="czzx">创作中心</div>
+                    </div>
+
+                    <!-- 开始创作 -->
+                    <div class="creationStart">开启你的创作之旅～
+                        <br>
+                        <br>
+                        <div class="csmall"></div>
+                        <a class="up" href="update.html">修改信息</a>
+                    </div>
+                    
+                    
+                </div>
+
+                <!-- 关注卡片 -->
+                <div class="interest">
+                    <!-- 关注了 -->
+                    <a href="" type="botton" class="interested">
+                        <div class="interestedContain">
+                            <div class="interestedTitle">关注了</div>
+                            <div class="insterestedCnt"> </div>
+                        </div>
+                    </a>
+
+                    <!-- 关注者 -->
+                    <a href="" type="botton" class="interested">
+                        <div class="interestedContain">
+                            <div class="interestedTitle">关注者</div>
+                            <div class="insterestedCnt">0</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="../js/homepage.js" type="module"></script>
+</html>

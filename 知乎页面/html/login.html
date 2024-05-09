@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>知乎 - 有问题， 就会有答案</title>
+    <!-- 图片路径出错 -->
+    <link rel="shortcut icon" href="../images/logo.ico">
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+    
+</head>
+
+<body>
+<!-- 登录页面 -->
+<div class="logbackground">
+    <!-- 页面中间大盒子 -->
+    <div class="main">
+        <!-- 知乎logo -->
+        <div class="titlefont">
+            <img alt="知乎" class="zhihulogo" src="../images/zhihulogo.png">
+        </div>
+        <!-- 登录注册盒子 -->
+        <div class="logbox">
+            <!-- 扫码登录区域 -->
+            <div class="codebox">
+                <!-- 二维码区域 -->
+                <div class="codecontainer">
+                    <b class="b1">打开知乎App</b>
+                    <p>在「我的页」左上角打开扫一扫</p>
+                    <div class="code">
+                        <img src="../images/二维码.gif">
+                    </div>
+
+                </div>
+                <div class="wxsaoma">
+                    
+                    <b>其他扫码方式：微信</b>
+                </div>
+                <!-- 选项框区域 -->
+                <div class="selectbox">
+                    <ul class="">
+                        <li><a href="https://www.zhihu.com/app/">下载知乎App</a></li>
+                        <li><a href="https://www.zhihu.com/org/signup">开通机构号</a></li>
+                        <li><a href="">无障碍模式</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 验证码密码登录区域 -->
+            <div class="loginBox">
+                <from class="login">
+                    <!-- 选择登录方式 -->
+                    <div class="selectWay">
+                        <!-- 验证码登录 -->
+                        <div class="loginVerify">验证码登录</div>
+                        <!-- 账号登录 -->
+                        <div class="loginId">密码登陆</div>
+                    </div>
+
+                    <!-- 账号 -->
+                    <form id="account">
+                        <input type="text" name = "username" class="inputAccount" placeholder="账号">
+                        <input type="password" name ="password" class="inputPassword" placeholder="密码">
+                        <botton class="loginButton" type="submit">登录</botton>
+                        <div class="register">
+                            <a href="javascript:void(0)" onclick="add()">
+                                注册
+                            </a>
+                        </div>
+                    </form>
+
+                    <!-- <div class="register">
+                        <a href="javascript:void(0)" onclick="add()">
+                            注册
+                        </a>
+                    </div> -->
+                    
+                    <!--  弹框的div -->
+                    <div id="contes">
+                        <form id="register" style="margin-left: 100px;">
+                        账&nbsp;&nbsp;&nbsp;号：<input class="name" type="text" value="" name="username" ><br>
+                        密&nbsp;&nbsp;&nbsp;码：<input class="mima" type="password" value="" name="password"><br>
+                        <input class="registerSub" type="submit" value="提交">
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            
+                    
+                </from>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+const add =function(){
+    document.getElementById('contes').style.display = 'block';
+}
+
+</script>
+<script src="../js/login.js" type="module"></script>
+</html>

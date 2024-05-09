@@ -1,0 +1,510 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+div {
+    display: block;
+}
+
+/* ！！?还是存在页面边距 */
+
+/* 整体背景 */
+.contextcontainer {
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(240, 240, 240);
+    margin: 0px;
+    overflow: hidden;
+    /* background-color: rgb(143, 51, 51); */
+    /* padding-top: 60px; */
+}
+
+/* 导航栏 */
+.navigation {
+    width: 100%;
+    height: 55px;
+    position: sticky;
+    z-index: 10;
+    top: 0px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 1px 3px rgba(18, 18, 18, 0.1);
+}
+
+.navigationlogo {
+    position: relative;
+    top: 5px;
+    margin-left: 100px;
+    width: 64px;
+    height: 33px;
+    /* color: inherit; */
+    float: left;
+}
+
+.navigationlogo img {
+    /* position: relative; */
+    margin-top: 5px;
+    width: 64px;
+    height: 33px;
+    color: inherit;
+}
+
+/* 选择栏目 */
+.columnselector {
+    width: 350px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    margin-left: 25px;
+    margin-right: 15px;
+    float: left;
+    /* border-bottom: none; */
+    /* background-color: rgb(223, 160, 160); */
+}
+
+.columnselector li {
+    width: 50px;
+    height: 50px;
+    margin-left: 3px;
+    margin-right: 15px;
+    /* margin: 0 15px; */
+    display: inline-block;
+    list-style-type: none;
+    /* text-align: center; */
+    font-size: 15px;
+    /* overflow: hidden; */
+    /* background-color: rgb(39, 5, 5); */
+}
+
+.columnselector li a {
+    position: relative;
+    /* display: inline-block; */
+    text-decoration: none;
+    color: gray;
+    /* padding: 14px 0; */
+}
+
+.columnselector a:hover {
+    color: black;
+    font-weight: 700;
+    /* border-bottom: 3px solid blue; */
+}
+
+/* .columnselector a::after{
+    height: 3px;
+    display: none;
+    background-color: rgb(44, 44, 236);
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+    content: "";
+} */
+
+/* 搜索区域 */
+.search {
+    width: 500px;
+    height: 34px;
+    position: relative;
+    margin-top: 10px;
+    margin-left: 585px;
+    display: flex;
+    /* background-color: aqua; */
+}
+
+.searchText {
+    width: 400px;
+    height: 34px;
+    position: relative;
+    overflow: hidden;
+    display: block;
+    /* background-color: rgb(141, 60, 60); */
+}
+
+.mediumBox {
+    width: 383px;
+    height: 24px;
+    padding-left: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    position: relative;
+    border: 1px solid gray;
+    border-radius: 999px;
+    overflow: hidden;
+    background-color: rgb(247, 247, 247);
+}
+
+.inputQuestion {
+    width: 340px;
+    position: relative;
+    outline: none;
+    height: inherit;
+    display: inline-block;
+    border: none;
+    background-color: inherit;
+    overflow: hidden;
+    font-size: 15px;
+}
+
+.searchLogo {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    /* margin-top: 2px; */
+    margin-left: 3px;
+}
+
+.haveQuestion {
+    width: 70px;
+    height: 34px;
+    position: relative;
+    margin-top: -34px;
+    margin-left: 412px;
+    background-color: rgb(17, 95, 212);
+    border: 0;
+    border-radius: 999px;
+    padding: 0 14px;
+    color: white;
+    /* z-index: 20; */
+    float: left;
+}
+
+/* 个人消息栏 */
+.userInfo {
+    width: 200px;
+    height: 34px;
+    display: flex;
+    margin-top: -34px;
+    margin-left: 1170px;
+    /* background-color: rgb(116, 42, 42); */
+    /* overflow: hidden; */
+}
+
+.news {
+    width: 24px;
+    height: 32px;
+    margin-top: 2px;
+    margin-right: 20px;
+    /* background-color: yellow; */
+    display: flex;
+
+}
+
+.news img {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+}
+
+.newsXx {
+    font-size: 12px;
+    line-height: 7px;
+    color: rgb(130, 141, 163);
+    text-align: center;
+}
+
+.message {
+    width: 24px;
+    height: 32px;
+    margin-top: 2px;
+    margin-right: 20px;
+    /* background-color: yellow; */
+    display: flex;
+
+}
+
+.message img {
+    width: 18px;
+    height: 18px;
+    margin-left: 3px;
+}
+
+.messageXx {
+    font-size: 12px;
+    line-height: 7px;
+    color: rgb(130, 141, 163);
+    text-align: center;
+}
+
+.photo {
+    width: 30px;
+    height: 30px;
+    /* background-color: rgb(55, 17, 99); */
+}
+
+.photo img {
+    width: inherit;
+    /* height: inherit; */
+    height: 30px;
+}
+
+/* 主内容 */
+.maincontainer {
+    width: 1000px;
+    height: 1000px;
+    /* padding: 0px 16px; */
+    margin: 10px 184px;
+    position: relative;
+    /* display: block; */
+    /* background-color: rgb(54, 64, 151); */
+    /* box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1); */
+}
+
+/* 内容两边大盒子 */
+.mainleft {
+    width: 695px;
+    height: 100%;
+    display: block;
+    position: absolute;
+    margin-right: 10px;
+    padding-right: 10px;
+    /* margin-bottom: ; */
+    float: left;
+    /* background-color: rgb(236, 5, 5); */
+}
+
+/* 频道 */
+.channel {
+    width: 695px;
+    height: 58px;
+    /* display: block; */
+    position: absolute;
+    z-index: 1;
+    /* background-color: rgb(190, 101, 101); */
+    background-color: #fff;
+    margin-left: 0px;
+    display: flex;
+    border-bottom: 1px solid gray;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+}
+
+.channel a {
+    width: 32px;
+    height: 58px;
+    /* margin: 18px 22px; */
+    margin: 0 22px;
+    /* background-color: rgb(212, 149, 193); */
+    align-items: center;
+    display: flex;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    /* z-index: 1; */
+}
+
+.channel a:hover {
+    color: rgb(13, 13, 139);
+    font-weight: 600;
+}
+
+/* .channel a::after{
+    font-weight: 700px;
+} */
+
+/* 文章 */
+.story {
+    width: 655px;
+    height: 210px;
+    display: block;
+    /* position: absolute; */
+    margin-top: 58px;
+    padding: 20px;
+    /* background-color: rgb(245, 177, 177); */
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+    /* z-index: 1; */
+}
+.story2 {
+    width: 655px;
+    height: 210px;
+    display: block;
+    /* position: absolute; */
+    /* margin-top: 58px; */
+    padding: 20px;
+    /* background-color: rgb(245, 177, 177); */
+    background-color: #fff;
+    border-bottom: 1px solid gray;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+    /* z-index: 1; */
+}
+
+/* 回答用户 */
+/* 头像 */
+.author {
+    width: 655px;
+    height: 30px;
+    /* margin-top: -10px; */
+    /* background-color: rgb(66, 68, 138); */
+}
+
+.profile1 {
+    width: 25px;
+    height: 20px;
+    padding: 3px;
+    /* background-color: rgb(111, 156, 214); */
+    /* background: url(../images/profile1.png); */
+    /* background-image: url(../images/profile1.png); */
+    /* background-repeat: no-repeat; */
+}
+
+.profile1 img {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    margin-top: -12px;
+    border-radius: 3px 3px 3px 3px;
+}
+
+.authorName1 {
+    width: auto;
+    height: 25px;
+    color: black;
+    /* margin-top: -12px; */
+    /* background-color: rgb(102, 27, 27); */
+}
+
+.authorName1 a {
+    text-decoration: none;
+    text-align: center;
+    font-weight: 600;
+    color: black;
+    /* line-height: 7px; */
+    display: table-cell;
+    vertical-align: middle;
+    /* 是挪动左边的图片 */
+}
+
+.question a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin-top: -15px;
+    /* background-color: rgb(102, 52, 52); */
+}
+
+.content {
+
+}
+
+
+/* 动作框 */
+.action {
+    position: absolute;
+    width: 655px;
+    height: 30px;
+    display: flex;
+    padding: 10px 20px;
+    margin: 30px -20px;
+    /* background-color: rgb(150, 72, 72); */
+}
+
+.agree{
+    width: 150px;
+    height: 30px;
+    background-color: rgb(46, 108, 189);
+    border-radius: 3px;
+    text-align: center;
+    /* color: #fff; */
+}
+.commentHref{
+    text-decoration: none;
+    text-align: center;
+    color: rgb(177, 177, 177);
+    width: 70px;
+    height: 30px;
+    margin-left: 20px;
+    /* background-color: rgb(83, 61, 61); */
+}
+
+/* 右盒子 */
+/* ！？？没有和左盒子并排 */
+.mainright {
+    width: 296px;
+    height: 100%;
+    /* display: block; */
+    position: absolute;
+    margin-left: 704px;
+    /* padding-right: 10px; */
+    /* margin-bottom: 0; */
+    float: left;
+    /* background-color: rgb(5, 236, 36); */
+}
+
+.rightcontent {
+    width: 296px;
+    height: 2248px;
+    top: -1900px;
+    position: sticky;
+    color: black;
+    text-align: center;
+    font-family: serif;
+    /* background-color: rgb(7, 85, 18); */
+}
+
+/* 创作中心 */
+.creationcenter {
+    height: 316px;
+    margin-bottom: 8px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+    /* background-color: rgb(211, 238, 138); */
+}
+.creationcenter img{
+    height: 295px;
+    width: 296px;
+}
+
+/* 推荐关注 */
+.reconmended-attention {
+    width: 296px;
+    height: 316px;
+    /* padding: 15px 10px; */
+    margin-bottom: 10px;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+    /* background-color: rgb(218, 233, 81); */
+}
+.reconmended-attention img{
+    height: 295px;
+    width: 296px;
+}
+
+/* 知乎好物 */
+.good-commodity {
+    height: 277px;
+    margin-bottom: 10px;
+    display: flex;
+    overflow: hidden;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+    /* background-color: rgb(219, 217, 64); */
+}
+
+/* 广告 */
+.advertisement {
+    height: 247px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 2px 2px 2px 3px rgba(18, 18, 18, 0.1);
+    /* background-color: sandybrown; */
+}
+.advertisement img{
+    height: 225px;
+    width: 296px;
+}
+
+/* 服务选择 */
+.service-selector {
+    height: 336px;
+    position: relative;
+    margin-bottom: 10px;
+    overflow: hidden;
+    /* background-color: rgba(233, 235, 128, 0.945); */
+}
+

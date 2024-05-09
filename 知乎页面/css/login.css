@@ -1,0 +1,334 @@
+@charset "utf-8";
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logbackground {
+    width: 100vw;
+    height: 100vh;
+    /* width: 1400px;
+    height: 688px; */
+    background-color: rgb(184, 222, 241);
+    background-image: url(https://static.zhihu.com/heifetz/assets/sign_bg.db29b0fb.png);
+    background-size: cover;
+    /* 保证图片相对于窗口 */
+    background-attachment: fixed;
+}
+
+.main {
+    width: 735px;
+    height: 80%;
+    /* background-color: rgb(170, 192, 235); */
+    margin: 0 auto;
+    padding-top: 30px;
+}
+
+/* 知乎logo */
+.titlefont {
+    width: 20%;
+    /* margin-top: 25px; */
+    margin: 0 auto;
+}
+
+.zhihulogo {
+    width: 128px;
+    height: 80px;
+    margin-bottom: 24px;
+}
+
+/* 登录小盒子 */
+.logbox {
+    width: 735px;
+    height: 500px;
+    position: absolute;
+    display: flex;
+    background-color: #fff;
+}
+
+/* 扫码登录区域 */
+.codebox {
+    width: 330px;
+    height: 500px;
+    /* background-color: rgb(156, 206, 238); */
+    border-style: none;
+    border-right: 1px solid gray;
+}
+
+/* 二维码区域 */
+.codecontainer {
+    width: 200px;
+    height: 300px;
+    margin-top: 100px;
+    margin-left: 70px;
+    text-align: center;
+    position: absolute; /*不加定位任为左上角报错 */
+    /* background-color: rgb(185, 125, 125); */
+}
+
+.codecontainer p {
+    padding-top: 20px;
+    font-size: 14px;
+}
+
+.code {
+    width: 120px;
+    height: 120px;
+    padding: 8px;
+    margin-top: 40px;
+    margin-left: 40px;
+    position: absolute;
+    /* background-color: rgb(77, 172, 196); */
+    border: 1px solid gray;
+    border-radius: 6px 6px 6px 6px;
+}
+
+.wxsaoma {
+    width: 130px;
+    height: 15px;
+    padding-left: 110px;
+    padding-top: 370px;
+    font-size: 14px;
+    position: relative;
+}
+.code img{
+    width: 100%;
+    height: 100%;
+
+}
+
+/* 选项框区域 */
+.selectbox {
+    width: 330px;
+    height: 60px;
+    margin-top: 26px;
+    margin-bottom: 22px;
+    /* background-color: rgb(134, 18, 18); */
+    /* overflow: hidden; */
+}
+
+.selectbox ul {
+    width: auto;
+    overflow: hidden;
+}
+
+.selectbox li {
+    /* width: 90px;
+    height: 40px; */
+    float: left;
+    margin-left: 10px;
+    margin-top: 15px;
+    margin-right: 2%;
+    position: relative;
+    overflow: hidden;
+}
+
+.selectbox a {
+    display: block;
+    width: 90px;
+    height: 30px;
+    /* background-color: rgb(230, 150, 150); */
+    font-size: 13px;
+    color: black;
+    text-align: center;
+    /* 垂直居中 */
+    display: table-cell;
+    vertical-align: middle;
+    text-decoration: none;
+    border: 1px solid gray;
+    border-color: rgb(240, 235, 235);
+    border-radius: 29px;
+}
+
+.selectbox a:hover {
+    border: 1px solid;
+    border-radius: 29px;
+    background-color: rgba(226, 225, 225, 0.808);
+}
+
+/* 登录区域 */
+.loginBox{
+    width: 405px;
+    height: 400px;
+    display: block;
+    text-align: center;
+    position: relative;
+    /* background-color: rgb(105, 62, 62); */
+}
+
+.login{
+    width: 357px;
+    height: 358px;
+    display: block;
+    overflow: hidden;
+    padding: 0 24px 30px;
+    /* background-color: rgb(167, 40, 40); */
+}
+
+.selectWay{
+    width: 357px;
+    height: 49px;
+    margin-top: 16px;
+    text-align: left;
+    display: flex;
+    /* background-color: rgb(66, 27, 27); */
+}
+
+.loginVerify{
+    width: 80px;
+    height: 50px;
+    font-size: 16px;
+    height: 50px;
+    line-height: 46px;
+    margin-right: 24px;
+    display: inline-block;
+    /* background-color: rgb(165, 44, 44); */
+}
+
+.loginId{
+    width: 65px;
+    height: 50px;
+    font-size: 16px;
+    height: 50px;
+    line-height: 46px;
+    position: relative;
+    font-weight: 600;
+    border-bottom: 3px solid #056de8;
+}
+
+#account{
+    width: 357px;
+    height: 45px;
+    /* border-bottom: 1px solid  #8590a6; */
+    margin-top: 24px;
+    /* background-color: rgb(131, 50, 50); */
+}
+.inputAccount{
+    width: 357px;
+    height: 44px;
+    display: block;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid  #bbbec5;
+    /* background-color: rgb(240, 125, 125); */
+}
+
+.inputPassword{
+    width: 357px;
+    height: 44px;
+    display: block;
+    margin-top: 24px;
+    line-height: 24px;
+    border: none;
+    border-bottom: 1px solid  #bbbec5;
+    z-index: 2;
+    /* background-color: rgb(143, 86, 86); */
+}
+
+.loginButton{
+    width: 300px;
+    background-color: #056de8;
+    height: 36px;
+    margin-top: 30px;
+    color: white;
+    border-color: #056de8;
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 16px;
+    text-align: center;
+    /* background-color: rgb(156, 91, 91); */
+}
+
+.registButton{
+    width: 357px;
+    background-color: #056de8;
+    height: 36px;
+    margin-top: 170px;
+    color: white;
+    border-color: #056de8;
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 16px;
+    text-align: center;
+    /* background-color: rgb(119, 51, 51); */
+}
+
+#all_light { /*整个弹窗的页面*/
+    opacity: 0.8; /*透明度*/
+    width: 100%; /*宽度*/
+    height: 2300px; /*高度，不能百分百*/
+    background: #000; /*背景色*/
+    position: absolute;
+    top: 0;
+    left: 0; /*定位*/
+    display: none; /*隐藏*/
+    z-index: 2; /*覆盖*/
+    }
+#contes { /* 弹框的页面*/
+    width: 470px; /*宽度*/
+    height: 300px; /*高度*/
+    background: rgb(212, 238, 247); /*背景色*/
+    display: none; /*隐藏*/
+    z-index: 2; /*覆盖*/
+    position: absolute;
+    top: 100px;
+    left: 0px; /* 定位*/
+    font-family: serif;
+    }
+.name{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    display: block;
+    line-height: 20px;
+    border: none;
+    border-bottom: 1px solid  #bbbec5;
+}
+.mima{
+    width: 300px;
+    height: 40px;
+    margin-top: 20px;
+    display: block;
+    line-height: 20px;
+    border: none;
+    border-bottom: 1px solid  #bbbec5;
+}
+.registerSub{
+    width: 60px;
+    height: 40px;
+    margin-left: 130px;
+    display: block;
+    border-radius: 2px;
+    background-color: rgb(149, 222, 240);
+    margin-top: 20px;
+}
+
+.register{
+    width: 300px;
+    background-color: #056de8;
+    height: 36px;
+    margin-top: 20px;
+    left: 400px;
+    top: 600px;
+    color: white;
+    border-color: #056de8;
+    border: 1px solid;
+    border-radius: 3px;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 32px;
+    padding: 0 16px;
+    text-align: center;
+    /* z-index: 1; */
+    /* position: absolute; */
+}
+.register a{
+    text-decoration: none;
+    color: #fff;
+}

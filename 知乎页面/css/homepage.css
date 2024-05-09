@@ -1,0 +1,430 @@
+@charset "utf-8";
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(245, 244, 244);
+}
+
+/* 个人名片 */
+.header {
+    width: 1000px;
+    height: 250px;
+    display: block;
+    position: relative;
+    margin: 10px auto;
+    padding: 0 16px;
+    /* background-color: rgb(75, 6, 6); */
+}
+
+/* 个人资料卡 */
+.personCard {
+    width: 1000px;
+    height: 250px;
+    border: 0.1px solid gray;
+    border-radius: 2px 2px 2px 2px;
+    box-shadow: 0 1px 3px hsla(0, 0%, 7%, .1);
+    background-color: #fff;
+}
+
+/* 上半部分 */
+.upPersonCard {
+    width: 1000px;
+    height: 132px;
+    position: relative;
+    /* display: flex; */
+    /* background-color: rgb(58, 16, 16); */
+}
+
+.upPersonCard img {
+    width: 1000px;
+    height: 132px;
+}
+
+/* 上传照片 */
+.upPersonCard > input {
+    outline: none;
+    /* display: none; */
+    width: 100%;
+    height: 132px;
+    line-height: 100px;
+    text-align: center;
+    border: 1px solid gray;
+
+    /* position: relative; */
+    background-image: url(../images/个人主页背景.png);
+    background-repeat: no-repeat;
+    /* z-index: 1; */
+}
+
+.button {
+    width: 105px;
+    height: 32px;
+    padding: 0 16px;
+    display: inline-block;
+    border: 1px solid;
+    border-radius: 3px;
+    outline: none;
+    /* background: none; */
+    text-align: center;
+    line-height: 32px;
+    background-color: rgb(165, 221, 252);
+    z-index: 1;
+}
+
+/* 下半部分 */
+.downPersonCard {
+    width: 1000px;
+    height: 94px;
+    position: relative;
+    display: flex;
+    /* background-color: rgb(85, 52, 52); */
+    /* background-color: #fff; */
+}
+
+.personMain {
+    width: 960px;
+    height: 94px;
+    margin: 0 20px 24px;
+    position: relative;
+}
+
+.personProfile {
+    width: 160px;
+    height: 160px;
+    top: -75px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+    /* background-color: rgb(94, 55, 55); */
+    /* background-image: url(../images/我的头像.JPG); */
+}
+
+.personProfile img {
+    width: 160px;
+    height: 160px;
+    border: 4px solid white;
+    border-radius: 10px;
+}
+
+.personContent {
+    width: 765px;
+    height: 78px;
+    border-left: 164px solid transparent;
+    padding-left: 32px;
+    padding-top: 16px;
+}
+
+.personName {
+
+}
+
+/* 信息内容 */
+.main {
+    width: 1000px;
+    height: 400px;
+    padding: 0 16px;
+    margin: 10px auto;
+    display: flex;
+    /* box-shadow: 0 1px 3px hsla(0,0%,7%,.1); */
+    /* background-color: rgb(241, 239, 239); */
+    /* background-color: #fff; */
+}
+
+/* 左边主内容 */
+.mainLeft {
+    width: 695px;
+    height: 310px;
+    display: block;
+    /* background-color: rgb(190, 141, 141); */
+    box-shadow: 0 1px 3px hsla(0, 0%, 7%, .1);
+    background-color: #fff;
+}
+
+/* 选择栏目 */
+.selector {
+    width: 695px;
+    height: 50px;
+    display: block;
+    /* background-color: rgb(243, 154, 154); */
+}
+
+.selector ul {
+    height: 50px;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #e4e4e4;
+    /* margin-block-start: 1em;
+    margin-block-end: 1em; */
+    /* padding-inline-start: 40px; */
+    /* background-color: rgb(150, 110, 110); */
+}
+
+.selector ul li {
+    list-style: none;
+    text-align: center;
+    padding: 0 12px;
+    display: inline-block;
+    /* background-color: rgb(114, 43, 43); */
+}
+
+.selector ul li a {
+    color: black;
+    text-decoration: none;
+    font-size: 15px;
+    text-align: center;
+    display: inline-block;
+    line-height: 12px;
+    padding: 12px 0;
+    position: relative;
+    margin-top: 4px;
+    /* background-color: rgb(134, 89, 89); */
+}
+
+.favorates {
+    font-weight: 700;
+    border-bottom: 3px solid #056de8;
+}
+
+.cnt {
+    font-weight: 400;
+    color: #999;
+    font-size: 15px;
+    line-height: 20px;
+    margin-left: 6px;
+}
+
+/* 创建收藏夹关注收藏夹 */
+.collectionHeader {
+    width: 695px;
+    height: 60px;
+    display: flex;
+    border-bottom: 1px solid #e4e4e4;
+    border-radius: 2px;
+    /* background-color: rgb(121, 66, 66); */
+}
+
+/* 左边 */
+.minLeft {
+    width: 581px;
+    height: 58px;
+    display: flex;
+    overflow: hidden;
+    /* background-color: rgb(233, 184, 184); */
+}
+
+.minLeft a {
+    height: 55px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    font-size: 16px;
+    margin: 0px 22px;
+    position: relative;
+    align-items: center;
+}
+
+.minLeft a:hover {
+    color: #044492;
+}
+
+.createFavor {
+    margin-top: 3px;
+    /* font-weight: 650; */
+    border-bottom: 3px solid #056de8;
+    /* margin-bottom: 0px; */
+    /* background-color: #044492; */
+}
+
+/* 右边 */
+.addFavorButton {
+    width: 90px;
+    height: 20px;
+    margin-top: 20px;
+    margin-right: 22px;
+    padding: 0;
+    float: left;
+    position: relative;
+    font-size: 15px;
+    /* background-color: rgb(151, 104, 104); */
+}
+
+.addFavorButton a {
+    text-decoration: none;
+    color: #056de8;
+}
+
+/* 收藏夹内容 */
+.collectionContent {
+    width: 695px;
+    height: 200px;
+    display: block;
+    /* background-color: rgb(128, 81, 81); */
+}
+
+.myFavor {
+    width: 655px;
+    height: 100px;
+    padding: 0 20px;
+    /* background-color: rgb(102, 74, 74); */
+}
+
+.myFavorContain {
+    width: 655px;
+    height: 60px;
+    padding: 20px 0;
+    /* background-color: rgb(141, 89, 89); */
+}
+
+.myFavorTitle {
+    color: black;
+    text-decoration: none;
+    line-height: 22px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.myFavorAction {
+    font-size: 14px;
+    color: #999;
+    margin-top: 16px;
+}
+
+.addComment {
+    width: 77px;
+    height: 20px;
+    margin-left: 25px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    line-height: inherit;
+    color: #8590a6;
+    /* display: inline-block; */
+    font-size: 14px;
+    text-align: center;
+    /* background-color: rgb(114, 72, 72); */
+}
+.edit {
+    width: 60px;
+    height: 20px;
+    margin-left: 5px;
+    padding: 0;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    line-height: inherit;
+    color: #8590a6;
+    /* display: inline-block; */
+    font-size: 14px;
+    text-align: center;
+    /* background-color: rgb(59, 8, 8); */
+
+}
+/* .addComment img{
+    width: 16px;
+    height: 16px;
+} */
+
+/* 右边主内容 */
+.mainRight{
+    width: 295px;
+    height: 310px;
+    margin-left: 10px;
+    display: block;
+    /* box-shadow: 0 1px 3px hsla(0, 0%, 7%, .1); */
+    /* background-color: rgb(128, 79, 79); */
+    /* background-color: #fff; */
+}
+.mainRightContain{
+    width: 2795px;
+    height: 310px;
+    /* background-color: rgb(236, 109, 109); */
+}
+/* 创作中心 */
+.creation{
+    width: 295px;
+    height: 230px;
+    margin-bottom: 6px;
+    box-shadow: 0 1px 3px hsla(0, 0%, 7%, .1);
+    /* background-color: rgb(170, 111, 111); */
+    background-color: #fff;
+}
+.creationHead{
+    width: 272px;
+    height: 55px;
+    padding: 0 20px 0 3px;
+    display: flex;
+    /* background-color: rgb(104, 62, 62); */
+}
+.creationHead img{
+    width: 80px;
+    height: 40px;
+    padding-top: 5px;
+}
+.czzx{
+    width: 135px;
+    height: 18px;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 14px;
+    /* background-color: rgb(138, 78, 78); */
+}
+
+.creationStart{
+    width: 265px;
+    height: 175px;
+    padding: 0 15px;
+    /* background-color: rgb(134, 77, 77); */
+    background-color: #fff;
+}
+.csmall{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+.up{
+    text-decoration: none;
+    color: black;
+    display: block;
+    width: 80px;
+    height: 20px;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 15px;
+    background-color: rgb(198, 236, 243);
+    text-align: center;
+    border-radius: 3px;
+}
+
+/* 关注卡片 */
+.interest{
+    width: 295px;
+    height: 74px;
+    box-shadow: 0 1px 3px hsla(0, 0%, 7%, .1);
+    background-color: #fff;
+    display: flex;
+}
+.interested{
+    width: 147px;
+    height: 74px;
+    text-decoration: none;
+    text-align: center;
+}
+.interestedContain{
+    width: 147px;
+    height: 50px;
+    padding: 12px 0;
+    border-right: 1px solid #e4e4e4;
+    /* background-color: rgb(136, 70, 70); */
+}
+.interestedTitle{
+    margin-bottom: 5px;
+    color: #8590a6;
+    font-size: 14px;
+}
+.insterestedCnt{
+    color: black;
+    font-size: 16px;
+    font-weight: 800;
+}
